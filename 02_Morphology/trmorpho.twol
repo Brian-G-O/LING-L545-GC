@@ -5,7 +5,21 @@ a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z
 
 %{k%}:ğ
 %{i%}:ı
+%{u%}:ü
+%{s%}:0
+%{n%}:0
 %{a%}:e
 ;
 
+Rules
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+k:ğ <= e_i ;
+
+i:0 <= i_ ;
+       a_ ;
+       e_ ;
+       ü_ ;
 
