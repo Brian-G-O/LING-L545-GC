@@ -1,0 +1,83 @@
+Multichar_Symbols
+
+%<n%>                   ! Noun
+%<pos%>                 ! Possessive
+%<dat%>                 ! Dative Case
+%<pro%>                 ! Productive Derivation
+
+%{k%}			! Appears if a vowel is used to its right. Could be either k or ğ.
+%{i%}			! Appears after a consonant. Could be either i or ı or nothing. Could be u or ü but only for possessive.
+%{s%}			! Appears after a vowel.
+%{n%}			! Appears after a vowel.
+%{a%}			! Appears after a consonant. Could be an a or an e.
+%>			! Front of the morpheme
+
+LEXICON Root
+
+Nouns ;
+
+LEXICON Nouns
+
+kedi:kedi Pos ; ! cat
+kedi:kedi Pro ; ! cat
+köpe%{k%}%{ğ%}:köpe%{k%}%{ğ%} Pos ; ! dog
+köpe%{k%}%{ğ%}:köpe%{k%}%{ğ%} Pro ; ! dog
+anne:anne Pos ;
+anne:anne Pro ;
+baba:baba Pos ;
+baba:baba Pro ;
+kız:kız Pos ;
+kız:kız Pro ;
+erke%{k%}%{ğ%}:erke%{k%}%{ğ%} Pos ;
+erke%{k%}%{ğ%}:erke%{k%}%{ğ%} Pro ;
+ev:ev Pos ;
+ev:ev Pro ;
+uçak:uçak Pos ;
+uçak:uçak Pro ;
+kuş:kuş Pos ;
+kuş:kuş Pro ;
+araba:araba Pos ;
+araba:araba Pro ;
+merdiven:merdiven Pos ;
+merdiven:merdiven Pro ;
+pencere:pencere Pos ;
+pencere:pencere Pro ;
+oda:oda Pos ;
+oda:oda Pro ;
+yer:yer Pos ;
+yer:yer Pro ;
+ülke:ülke Pos ;
+ülke:ülke Pro ;
+deniz:deniz Pos ;
+deniz:deniz Pro ;
+gökyüzü:gökyüzü Pos ;
+gökyüzü:gökyüzü Pro ;
+hava:hava Pos ;
+hava:hava Pro ;
+su:su Pos ;
+su:su Pro ;
+çay:çay Pos ;
+çay:çay Pro ;
+ 
+Lexicon Pos
+
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}m:%{i%}%{ı%}%{u%}%{ü%}m Dat ; ! my
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}m:%{i%}%{ı%}%{u%}%{ü%}m # ; ! my
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}n:%{i%}%{ı%}%{u%}%{ü%}n Dat ; ! your
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}n:%{i%}%{ı%}%{u%}%{ü%}n # ; ! your
+%<pos%>%{s%}%{i%}%{ı%}%{u%}%{ü%}:%{s%}%{i%}%{ı%}%{u%}%{ü%} Dat ; ! his
+%<pos%>%{s%}%{i%}%{ı%}%{u%}%{ü%}:%{s%}%{i%}%{ı%}%{u%}%{ü%} # ; ! his
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}m%{i%}%{ı%}%{u%}%{ü%}z:%{i%}%{ı%}%{u%}%{ü%}m%{i%}%{ı%}%{u%}%{ü%}z Dat ; ! our
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}m%%{ı%}{i%}%{ı%}%{u%}%{ü%}z:%{i%}%{ı%}%{u%}%{ü%}m%{i%}%{ı%}%{u%}%{ü%}z # ; ! our
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}n%%{ı%}{i%}%{ı%}%{u%}%{ü%}z:%{i%}%{ı%}%{u%}%{ü%}n%{i%}%{ı%}%{u%}%{ü%}z Dat ; ! your all's
+%<pos%>%{i%}%{ı%}%{u%}%{ü%}n%%{ı%}{i%}%{ı%}%{u%}%{ü%}z:%{i%}%{ı%}%{u%}%{ü%}n%{i%}%{ı%}%{u%}%{ü%}z # ; ! your all's
+%<pos%>l%{a%}%{e%}r%{i%}%{ı%}:l%{a%}%{e%}r%{i%}%{ı%} Dat ; ! their
+%<pos%>l%{a%}%{e%}r%{i%}%{ı%}:l%{a%}%{e%}r%{i%}%{ı%} # ; ! their
+
+Lexicon Dat
+
+%<dat%>%{n%}%{a%}%{e%}:%{n%}%{a%}%{e%} # ; ! to
+
+Lexicon Pro
+
+%<pro%>l%{i%}%{ı%}%{u%}%{ü%}k:l%{i%}%{ı%}%{u%}%{ü%}k # ; ! for
